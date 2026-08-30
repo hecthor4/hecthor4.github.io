@@ -66,6 +66,19 @@ p {
     color: #5a59a0
 }
 
+p a:link {
+    color: #b4c2ff
+}
+p a:visited {
+    color: #5a59a0
+}
+p a:hover {
+    color: #a0ebee
+}
+p a:active {
+    color: #5a59a0
+}
+
 
 .intro {
     display: flex;
