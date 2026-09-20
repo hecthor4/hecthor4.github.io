@@ -33,6 +33,7 @@ body {
     background-color: #121212;
     color: #FAF9F6;
     margin: 0;
+    padding-top: 70px;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -223,4 +224,68 @@ p a:active {
     object-fit: contain;
     display: block;
     margin: 0 auto;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 12px;
+        align-items: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .navbar-links {
+        gap: 10px;
+        display: flex;
+        width: max-content;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+
+
+
+    .game-container {
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+    }
+
+    .game, .game-unreleased, .game-big {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        border-width: 6px;
+        border-radius: 16px;
+    }
+
+    .game-title {
+        font-size: 15px;
+        padding: 12px 10px;
+    }
 }
